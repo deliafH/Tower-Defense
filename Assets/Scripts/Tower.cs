@@ -5,10 +5,12 @@ using UnityEngine;
 public class Tower: MonoBehaviour
 {
     protected List<Transform> bots;
-
+    [SerializeField]protected int damage;
+    [SerializeField] BulletCollider bullet;
     private void Awake()
     {
         bots = new List<Transform>();
+        bullet.SetDmg(damage);
     }
     public void AddBotsToSights(Transform transform)
     {
