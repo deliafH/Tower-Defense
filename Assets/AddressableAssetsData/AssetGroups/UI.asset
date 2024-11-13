@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: UI
+  m_EditorClassIdentifier: 
+  m_GroupName: UI
+  m_Data:
+    m_SerializedData: []
+  m_GUID: b6f2846550649bb48b209e15947f2ae1
+  m_SerializeEntries:
+  - m_GUID: f1c7ea1cf6125e442a3c1f70ad0c48ac
+    m_Address: CanvasGamePlay
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6755a5fb766d06b41801ee57a432d97e
+    m_Address: CanvasShop
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7daa4daeaffd6594481935be73975e9a
+    m_Address: CanvasMoving
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 595c0335232b4974d8270ae4705855ce
+    m_Address: CanvasMainMenu
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3c319d92cd127364c832051a4d0b6cd6
+    m_Address: CanvasLose
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: b31afd53b6131c543823d53e466bebe9, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: b9dad6a9ddb615846b6813a4a734af74, type: 2}
+    - {fileID: 11400000, guid: 50cddccf86e5c424ca3ffcd9b3982420, type: 2}
