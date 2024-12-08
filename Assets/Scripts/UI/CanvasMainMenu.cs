@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
+
 namespace UI {
     public class CanvasMainMenu : UICanvas
     {
@@ -24,5 +26,12 @@ namespace UI {
                 UIManager.Instance.OpenUI<CanvasGamePlay>();
                 EventManager.Instance.TriggerEvent("PlayGame");
         }
+
+
+        public void OpenHome()
+        {
+            Addressables.LoadSceneAsync("MainMenu");
+        }
+
     }
 }

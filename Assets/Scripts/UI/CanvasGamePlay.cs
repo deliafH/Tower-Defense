@@ -16,7 +16,7 @@ namespace UI
         
         public void Replay()
         {
-            Addressables.LoadSceneAsync("GamePlay");
+            Addressables.LoadSceneAsync("Level" + GameManager.Instance.Level);
         }
 
         private void OnEnable()

@@ -15,9 +15,13 @@ namespace UI
 
         public void Replay()
         {
-            Addressables.LoadSceneAsync("GamePlay");
+            Addressables.LoadSceneAsync("Level" + GameManager.Instance.Level); ;
         }
 
+        public void OpenHome()
+        {
+            Addressables.LoadSceneAsync("MainMenu");
+        }
 
     }
 }
