@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FireBug2
+  m_Name: FirBug-Move Right
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -21,19 +21,19 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: -503940002032605404, guid: d3d2945314e5d034b97ad97d2f3585fe, type: 3}
-    - time: 0.15
-      value: {fileID: 2214041946266056656, guid: d3d2945314e5d034b97ad97d2f3585fe, type: 3}
     - time: 0.28333333
-      value: {fileID: -3421494973953053368, guid: d3d2945314e5d034b97ad97d2f3585fe, type: 3}
-    - time: 0.43333334
-      value: {fileID: 4544069466170197819, guid: d3d2945314e5d034b97ad97d2f3585fe, type: 3}
+      value: {fileID: 2214041946266056656, guid: d3d2945314e5d034b97ad97d2f3585fe, type: 3}
     - time: 0.56666666
-      value: {fileID: -1035652670328331914, guid: d3d2945314e5d034b97ad97d2f3585fe, type: 3}
-    - time: 0.71666664
-      value: {fileID: 2127370357118640855, guid: d3d2945314e5d034b97ad97d2f3585fe, type: 3}
+      value: {fileID: -3421494973953053368, guid: d3d2945314e5d034b97ad97d2f3585fe, type: 3}
     - time: 0.85
+      value: {fileID: 4544069466170197819, guid: d3d2945314e5d034b97ad97d2f3585fe, type: 3}
+    - time: 1.15
+      value: {fileID: -1035652670328331914, guid: d3d2945314e5d034b97ad97d2f3585fe, type: 3}
+    - time: 1.4333333
+      value: {fileID: 2127370357118640855, guid: d3d2945314e5d034b97ad97d2f3585fe, type: 3}
+    - time: 1.7166667
       value: {fileID: -1822548022858977286, guid: d3d2945314e5d034b97ad97d2f3585fe, type: 3}
-    - time: 1
+    - time: 2
       value: {fileID: 1251214459022993952, guid: d3d2945314e5d034b97ad97d2f3585fe, type: 3}
     attribute: m_Sprite
     path: 
@@ -67,7 +67,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.0166667
+    m_StopTime: 2.0166667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
