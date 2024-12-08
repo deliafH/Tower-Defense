@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e02c8db345a32e244944f2cdfb60f807, type: 3}
-  m_Name: Tower1
+  m_Name: Tower1-3
   m_EditorClassIdentifier: 
   id: 1
   Name: 
   information: 
-  towerType: {fileID: 2520982524436892186, guid: 5ffbc08b7562a0640b6e96e89840e7b4, type: 3}
-  towerSprite: {fileID: -5901685104126582622, guid: 7f1173410f5a2a54aa97a3880ef3a634, type: 3}
-  price: 7
+  towerType: {fileID: 2520982524436892186, guid: 65f2a6df553917444afd7d32e291b383, type: 3}
+  towerSprite: {fileID: -5824280874467805694, guid: 7f1173410f5a2a54aa97a3880ef3a634, type: 3}
+  price: 12
