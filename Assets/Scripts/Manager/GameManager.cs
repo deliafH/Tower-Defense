@@ -8,15 +8,26 @@ using UnityEngine;
 public enum GameState { MAINMENU, GAMEPLAY, ARRANGE, START, FINISH, }
 public class GameManager: Singleton<GameManager>
 {
+    [SerializeField] Vector2 minCamPos, maxCamPos;
+    [SerializeField] int level;
+    public int Level => level;
+    public Vector2 MinCamPos => minCamPos;
+    public Vector2 MaxCamPos => maxCamPos;
     private int goldVal;
     private GameState gameState;
     private TowerData pickedTower;
 
 
-    internal void OpenShop()
+    public void OpenShop()
     {
         this.gameState = GameState.MAINMENU;
         pickedTower = null;
+    }
+
+    public  void SetLose()
+    {
+        UI.UIManager.Instance.CloseAll();
+        UI.UIManager.Instance.OpenUI<UI.CanvasLose>();
     }
 
     private void Awake()

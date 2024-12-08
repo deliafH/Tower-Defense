@@ -7,10 +7,12 @@ public class BotMoving : MonoBehaviour
     Vector3 destPos;
     [SerializeField] float speed;
     [SerializeField] Animator animator;
+    [SerializeField] bool isLeftAnim, isUpAnim;
+    [SerializeField] Transform spriteTransform;
 
     private void Start()
     {
-        destPos = GameController.Instance.FirstDest;
+        //destPos = GameController.Instance.FirstDest;
     }
 
     public void SetDest(Vector3 dest)
@@ -26,28 +28,32 @@ public class BotMoving : MonoBehaviour
 
         if (Mathf.Abs(destPos.y - transform.position.y) > Mathf.Abs(destPos.x - transform.position.x))
         {
-            if (destPos.y < transform.position.y)
+            if (destPos.y < transform.position.y ^ !isUpAnim)
             {
                 animator.SetBool("isForward", true);
-                transform.rotation = Quaternion.Euler(180, 0, 0);
+                spriteTransform.rotation = Quaternion.Euler(180, 0, 0);
+                transform.rotation = Quaternion.identity;
             }
             else
             {
                 animator.SetBool("isForward", true);
-                transform.rotation = Quaternion.Euler(0, 0, 0);
+                spriteTransform.rotation = Quaternion.Euler(0, 0, 0);
+                transform.rotation = Quaternion.identity;
             }
         }
         else
         {
-            if (destPos.x > transform.position.x)
+            if (destPos.x > transform.position.x ^ !isLeftAnim)
             {
                 animator.SetBool("isForward", false);
-                transform.rotation = Quaternion.Euler(0, 0, 0);
+                spriteTransform.rotation = Quaternion.Euler(0, 0, 0);
+                transform.rotation = Quaternion.identity;
             }
             else
             {
                 animator.SetBool("isForward", false);
-                transform.rotation = Quaternion.Euler(0, 180, 0);
+                spriteTransform.rotation = Quaternion.Euler(0, 180, 0);
+                transform.rotation = Quaternion.identity;
             }
         }
     }
