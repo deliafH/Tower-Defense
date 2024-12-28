@@ -54,6 +54,7 @@ namespace UI
                 {
                     UIManager.Instance.CloseAll();
                     UIManager.Instance.OpenUI<CanvasLose>();
+                    WakeUpBots.Instance.LoseGame();
                 }
                 else
                 {

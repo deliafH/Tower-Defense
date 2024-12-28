@@ -61,4 +61,5 @@ public class PlayerMoving : Singleton<PlayerMoving>
         animator.SetInteger("vy", deltaY < 0 ? -1 : (deltaY > 0 ? 1 : 0));
 
     }
+
 }

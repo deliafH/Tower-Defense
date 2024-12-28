@@ -21,6 +21,14 @@ public class WakeUpBots : Singleton<WakeUpBots>
         curBotSpawn = 0;
         enemies = enemies.OrderBy(e => e.timeSpawn).ToArray();
     }
+
+    public void LoseGame()
+    {
+        foreach(EnemySpawnData enemy in enemies)
+        {
+            enemy.enemy.gameObject.SetActive(false);
+        }
+    }
     public void WakeUp()
     {
         for(int i = 0; i < transform.childCount; i++)
@@ -40,7 +48,8 @@ public class WakeUpBots : Singleton<WakeUpBots>
     public void CheckIsWin()
     {
         curBotsDied += 1;
-        if (transform.childCount == curBotsDied)
+        Debug.Log(curBotsDied);
+        if (enemies.Length == curBotsDied)
         {
             UI.UIManager.Instance.CloseAll();
             UI.UIManager.Instance.OpenUI<UI.CanvasWin>();

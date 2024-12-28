@@ -28,12 +28,12 @@ public class Enemy : MonoBehaviour
         if (currentHp <= 0)
         {
             OnDied();
-            WakeUpBots.Instance.CheckIsWin();
         }
     }
 
     public void OnDied()
     {
+            WakeUpBots.Instance.CheckIsWin();
         if(goldDrop > 0)
         {
             GoldSpawn goldIns = Instantiate(goldPrebs, transform.position, Quaternion.identity);
