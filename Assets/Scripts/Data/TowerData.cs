@@ -13,4 +13,6 @@ public class TowerData : ScriptableObject
     public GameObject towerType;
     public Sprite towerSprite;
     public int price;
+    public int unlockLevel;
+    public bool isUnlock => PlayerPrefs.HasKey("PlayerLevel")? PlayerPrefs.GetInt("PlayerLevel") >= unlockLevel: unlockLevel == 0;
 }
