@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Tower2-3
   m_EditorClassIdentifier: 
   id: 2
-  Name: 
+  Name: LASER III
   information: 
   towerType: {fileID: 1121359068795130748, guid: fb22ccdacf1c2f5499b220e935051319, type: 3}
   towerSprite: {fileID: 8994055928932828401, guid: 045e9fa86bea8864881f60f74e6c9991, type: 3}
   price: 10
+  unlockLevel: 2

@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Tower1-3
   m_EditorClassIdentifier: 
   id: 1
-  Name: 
+  Name: SPILL III
   information: 
   towerType: {fileID: 2520982524436892186, guid: 65f2a6df553917444afd7d32e291b383, type: 3}
   towerSprite: {fileID: -5824280874467805694, guid: 7f1173410f5a2a54aa97a3880ef3a634, type: 3}
   price: 12
+  unlockLevel: 2
