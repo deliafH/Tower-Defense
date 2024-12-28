@@ -8,7 +8,9 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] int maxHp;
     [SerializeField] Slider hpSlider;
+    [SerializeField] GoldSpawn goldPrebs;
     int currentHp;
+    [SerializeField]int goldDrop;
 
     private void Awake()
     {
@@ -25,8 +27,19 @@ public class Enemy : MonoBehaviour
         hpSlider.value = 1f * currentHp / maxHp;
         if (currentHp <= 0)
         {
-            gameObject.SetActive(false);
+            OnDied();
             WakeUpBots.Instance.CheckIsWin();
         }
+    }
+
+    public void OnDied()
+    {
+        if(goldDrop > 0)
+        {
+            GoldSpawn goldIns = Instantiate(goldPrebs, transform.position, Quaternion.identity);
+            goldIns.Init(goldDrop);
+        }
+        gameObject.SetActive(false);
+
     }
 }
