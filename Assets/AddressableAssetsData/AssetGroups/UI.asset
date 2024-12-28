@@ -49,6 +49,18 @@ MonoBehaviour:
     m_Address: CanvasChooseLevel
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 0e3d08dfb869c4f43ae7824ef783033e
+    m_Address: CanvasAchivemen
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 73c3d8bc105f4f54582981e07ad41267
+    m_Address: CanvasLibrary
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f1826b37fa0a51648afb99db96f6eeac
+    m_Address: CanvasSettings
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: b31afd53b6131c543823d53e466bebe9, type: 2}
   m_SchemaSet:

@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 5612053695476965638}
   - component: {fileID: 7559348776114352470}
   - component: {fileID: 8647872445869436604}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: EndPar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5612053695476965638
 Transform:
   m_ObjectHideFlags: 0
@@ -29,8 +29,8 @@ Transform:
   m_LocalPosition: {x: -2.42, y: 0.58, z: -34.51248}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1121359068795130749}
-  m_RootOrder: 4
+  m_Father: {fileID: 1121359068833609857}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!198 &7559348776114352470
 ParticleSystem:
@@ -4830,14 +4830,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1121359068795130748}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.42, y: -0.58, z: 34.51248}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1121359069835901687}
   - {fileID: 1121359068833609857}
-  - {fileID: 4704631167351526961}
-  - {fileID: 6466119103125143158}
-  - {fileID: 5612053695476965638}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4904,7 +4901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 791b19d42f6b22c46aaf20c99d86ba25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 18
+  damage: 20
   enemySight: {fileID: 1121359069835901686}
   line: {fileID: 1121359068833609855}
   cycle: 1
@@ -4924,7 +4921,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1121359068833609857}
   - component: {fileID: 1121359068833609855}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4941,7 +4938,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4704631167351526961}
+  - {fileID: 6466119103125143158}
+  - {fileID: 5612053695476965638}
   m_Father: {fileID: 1121359068795130749}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5055,7 +5055,7 @@ GameObject:
   - component: {fileID: 1121359069835901642}
   - component: {fileID: 1121359069835901685}
   - component: {fileID: 1121359069835901684}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TowerSight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5167,13 +5167,13 @@ GameObject:
   - component: {fileID: 4704631167351526961}
   - component: {fileID: 6464633134743347747}
   - component: {fileID: 3452803009933394009}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: StartLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4704631167351526961
 Transform:
   m_ObjectHideFlags: 0
@@ -5185,8 +5185,8 @@ Transform:
   m_LocalPosition: {x: -6.42, y: 0.58, z: -34.51248}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1121359068795130749}
-  m_RootOrder: 2
+  m_Father: {fileID: 1121359068833609857}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &6464633134743347747
 ParticleSystem:
@@ -9971,13 +9971,13 @@ GameObject:
   - component: {fileID: 6466119103125143158}
   - component: {fileID: 1661358209650193563}
   - component: {fileID: 8200962641544408019}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: EndLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6466119103125143158
 Transform:
   m_ObjectHideFlags: 0
@@ -9989,8 +9989,8 @@ Transform:
   m_LocalPosition: {x: -2.42, y: 0.58, z: -34.51248}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1121359068795130749}
-  m_RootOrder: 3
+  m_Father: {fileID: 1121359068833609857}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &1661358209650193563
 ParticleSystem:

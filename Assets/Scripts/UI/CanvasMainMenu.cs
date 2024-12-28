@@ -8,7 +8,6 @@ namespace UI {
     {
         public void OpenShop()
         {
-            UIManager.Instance.CloseAll();
             GameManager.Instance.OpenShop();
             UIManager.Instance.OpenUI<CanvasShop>();
         }
@@ -21,10 +20,11 @@ namespace UI {
 
         public void PlayGame()
         {
-            WakeUpBots.Instance.WakeUp();
-                UIManager.Instance.CloseAll();
-                UIManager.Instance.OpenUI<CanvasGamePlay>();
-                EventManager.Instance.TriggerEvent("PlayGame");
+            PlayerMoving.Instance.PlayGame();
+            WakeUpBots.Instance.enabled = true;
+            UIManager.Instance.CloseAll();
+            UIManager.Instance.OpenUI<CanvasGamePlay>();
+            EventManager.Instance.TriggerEvent("PlayGame");
         }
 
 

@@ -12,19 +12,11 @@ namespace UI
 {
     public class UIManager : Singleton<UIManager>
     {
-        //list from resource
-        //list load ui resource
         [SerializeField] private UICanvas[] uiResources;
-
-        //dict for quick query UI prefab
-        //dict dung de lu thong tin prefab canvas truy cap cho nhanh
         private Dictionary<System.Type, UICanvas> uiCanvasPrefab = new Dictionary<System.Type, UICanvas>();
-        //dict for UI active
-        //dict luu cac ui dang dung
+       
         private Dictionary<System.Type, UICanvas> uiCanvas = new Dictionary<System.Type, UICanvas>();
 
-        //canvas container, it should be a canvas - root
-        //canvas chua dung cac canvas con, nen la mot canvas - root de chua cac canvas nay
         public Transform CanvasParentTF;
 
         #region Canvas
@@ -34,7 +26,6 @@ namespace UI
         public async Task<T> OpenUI<T>() where T : UICanvas
         {
             var ui = await GetUI<T>();
-            ui.Setup();
             ui.Open();
             return ui;
         }
@@ -117,61 +108,6 @@ namespace UI
             return uiCanvasPrefab[typeof(T)] as T;
         }
 
-
-        #endregion
-
-        #region Back Button
-
-        private Dictionary<UICanvas, UnityAction> BackActionEvents = new Dictionary<UICanvas, UnityAction>();
-        private List<UICanvas> backCanvas = new List<UICanvas>();
-        UICanvas BackTopUI
-        {
-            get
-            {
-                return backCanvas.Count > 0 ? backCanvas[backCanvas.Count - 1] : null;
-            }
-        }
-
-
-        private void LateUpdate()
-        {
-            if (Input.GetKey(KeyCode.Escape) && BackTopUI != null)
-            {
-                BackActionEvents[BackTopUI]?.Invoke();
-            }
-        }
-
-        public void PushBackAction(UICanvas canvas, UnityAction action)
-        {
-            if (!BackActionEvents.ContainsKey(canvas))
-            {
-                BackActionEvents.Add(canvas, action);
-            }
-        }
-
-        public void AddBackUI(UICanvas canvas)
-        {
-            if (!backCanvas.Contains(canvas))
-            {
-                backCanvas.Add(canvas);
-            }
-        }
-
-        public void RemoveBackUI(UICanvas canvas)
-        {
-            if (backCanvas.Contains(canvas))
-            {
-                backCanvas.Remove(canvas);
-            }
-        }
-
-        /// <summary>
-        /// CLear backey when comeback index UI canvas
-        /// </summary>
-        public void ClearBackKey()
-        {
-            backCanvas.Clear();
-        }
 
         #endregion
     }

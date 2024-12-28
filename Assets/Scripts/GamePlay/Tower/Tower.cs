@@ -10,6 +10,7 @@ public class Tower: MonoBehaviour
     private void Awake()
     {
         bots = new List<Transform>();
+        PlayGame(null);
     }
 
     private void OnEnable()

@@ -541,6 +541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHp: 150
   hpSlider: {fileID: 2744870804486811314}
+  goldPrebs: {fileID: 814636794210414649, guid: d8f1ba1171e2eff438098abdce3c080b, type: 3}
 --- !u!1 &6869525248250236064
 GameObject:
   m_ObjectHideFlags: 0

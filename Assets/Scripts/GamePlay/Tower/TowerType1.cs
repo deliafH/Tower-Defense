@@ -5,8 +5,8 @@ using UnityEngine;
 public class TowerType1 : Tower
 {
     [SerializeField] float cycle;
-    [SerializeField] Transform circle;
     [SerializeField] float maxSize;
+    [SerializeField] Transform circle;
     private float baseSize;
     private float veloc;
     private float currentSize;

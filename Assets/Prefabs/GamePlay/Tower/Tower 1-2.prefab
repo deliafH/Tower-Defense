@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6198647295177928804}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,8 +131,8 @@ MonoBehaviour:
   damage: 30
   enemySight: {fileID: 2520982525007766416}
   cycle: 2
-  circle: {fileID: 6198647295177928804}
   maxSize: 7
+  circle: {fileID: 6198647295177928804}
   bullet: {fileID: 1226249199749031332}
 --- !u!1 &2520982525007766416
 GameObject:
@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 2520982525007766444}
   - component: {fileID: 2520982525007766419}
   - component: {fileID: 2520982525007766418}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TowerSight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,7 +259,7 @@ GameObject:
   - component: {fileID: 2756296583137798419}
   - component: {fileID: 8517909979909923297}
   - component: {fileID: 1226249199749031332}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,7 +299,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 72b2012d00498d74d863d1a36b3ce8fe, type: 2}
+  - {fileID: 2100000, guid: 92ebc883e53211249ac6fc45e0dc08c2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

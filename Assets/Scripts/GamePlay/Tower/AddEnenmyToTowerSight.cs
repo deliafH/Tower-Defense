@@ -8,11 +8,13 @@ public class AddEnenmyToTowerSight : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(collision.CompareTag("Enemy"))
         tower.AddBotsToSights(collision.transform);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        tower.RemoveBotsFromSights(collision.transform);
+        if (collision.CompareTag("Enemy"))
+            tower.RemoveBotsFromSights(collision.transform);
     }
 }

@@ -31,9 +31,6 @@ Transform:
   m_Children:
   - {fileID: 1121359069835901687}
   - {fileID: 1121359068833609857}
-  - {fileID: 7474987550905352907}
-  - {fileID: 2912194091801797516}
-  - {fileID: 5531533244110766025}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -120,13 +117,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1121359068833609857}
   - component: {fileID: 1121359068833609855}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1121359068833609857
 Transform:
   m_ObjectHideFlags: 0
@@ -137,7 +134,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 7474987550905352907}
+  - {fileID: 2912194091801797516}
+  - {fileID: 5531533244110766025}
   m_Father: {fileID: 1121359068795130749}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -251,7 +251,7 @@ GameObject:
   - component: {fileID: 1121359069835901642}
   - component: {fileID: 1121359069835901685}
   - component: {fileID: 1121359069835901684}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TowerSight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -363,7 +363,7 @@ GameObject:
   - component: {fileID: 5531533244110766025}
   - component: {fileID: 2986665029876062916}
   - component: {fileID: 2011399767012563949}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: EndPar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -377,12 +377,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2248705318312278127}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1121359068795130749}
-  m_RootOrder: 4
+  m_Father: {fileID: 1121359068833609857}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!198 &2986665029876062916
 ParticleSystem:
@@ -5167,7 +5167,7 @@ GameObject:
   - component: {fileID: 7474987550905352907}
   - component: {fileID: 88390411174137519}
   - component: {fileID: 6323469092477161867}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: StartLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5181,12 +5181,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3881980087071944113}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1121359068795130749}
-  m_RootOrder: 2
+  m_Father: {fileID: 1121359068833609857}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &88390411174137519
 ParticleSystem:
@@ -9971,7 +9971,7 @@ GameObject:
   - component: {fileID: 2912194091801797516}
   - component: {fileID: 5187086855877683615}
   - component: {fileID: 3365579270391540954}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: EndLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9985,12 +9985,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4614542734654465645}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1121359068795130749}
-  m_RootOrder: 3
+  m_Father: {fileID: 1121359068833609857}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &5187086855877683615
 ParticleSystem:

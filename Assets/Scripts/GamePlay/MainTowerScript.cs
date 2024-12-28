@@ -18,7 +18,7 @@ public class MainTowerScript : MonoBehaviour
             {
                 hp -= e.getMaxHp();
                 EventManager.Instance.TriggerEvent("Dameage", 1f * hp / maxHp);
-                if (hp < 0) GameManager.Instance.SetLose();
+                e.Damemage(999);
             }
         }
     }

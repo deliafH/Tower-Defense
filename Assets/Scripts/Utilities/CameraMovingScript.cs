@@ -19,13 +19,26 @@ public class CameraMovingScript : Singleton<CameraMovingScript>
         rightBorder = GameManager.Instance.MaxCamPos.x;    
     }
 
-    void Update()
+    public void SetDest(Vector3 desiredPosition)
+    {
+        desiredPosition.z = -10;
+        if (Vector3.Distance(camera.position, desiredPosition) > minDistance)
+        {
+            desiredPosition.x = Mathf.Clamp(desiredPosition.x, leftBorder, rightBorder);
+            desiredPosition.y = Mathf.Clamp(desiredPosition.y, lowerBorder, upperBorder);
+
+            camera.position = Vector3.Lerp(camera.position, desiredPosition, Time.deltaTime * moveSpeed);
+        }
+    }
+
+
+    /*void Update()
     {
         if (Input.GetMouseButton(0) && camera != null)
         {
             Move();
         }
-    }
+    }*/
 
     public void Move()
     {

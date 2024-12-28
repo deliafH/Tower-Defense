@@ -1,14 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class WakeUpBots : Singleton<WakeUpBots>
 {
-    bool isStarted;
-    int curBotsDied;
+    float time;
+    int curBotsDied, curBotSpawn;
+    [System.Serializable]
+    private class EnemySpawnData
+    {
+        public GameObject enemy;
+        public float timeSpawn;
+    }
+    [SerializeField] EnemySpawnData[] enemies; 
     private void Start()
     {
-        isStarted = false;
+        time = 0;
+        curBotsDied = 0;
+        curBotSpawn = 0;
+        enemies = enemies.OrderBy(e => e.timeSpawn).ToArray();
     }
     public void WakeUp()
     {
@@ -16,10 +27,16 @@ public class WakeUpBots : Singleton<WakeUpBots>
         {
             transform.GetChild(i).gameObject.SetActive(true);
         }
-        curBotsDied = 0;
-        isStarted = true;
     }
-
+    private void Update()
+    {
+        time += Time.deltaTime;
+        while(curBotSpawn < enemies.Length && time > enemies[curBotSpawn].timeSpawn)
+        {
+            enemies[curBotSpawn].enemy.SetActive(true);
+            curBotSpawn += 1;
+        }
+    }
     public void CheckIsWin()
     {
         curBotsDied += 1;
@@ -27,6 +44,7 @@ public class WakeUpBots : Singleton<WakeUpBots>
         {
             UI.UIManager.Instance.CloseAll();
             UI.UIManager.Instance.OpenUI<UI.CanvasWin>();
+            enabled = false;
         }
     }
 }

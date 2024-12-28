@@ -100,8 +100,8 @@ MonoBehaviour:
   damage: 35
   enemySight: {fileID: 2520982525007766416}
   cycle: 2
-  circle: {fileID: 8155021191573773048}
   maxSize: 7
+  circle: {fileID: 8155021191573773048}
   bullet: {fileID: 7646909837616312721}
 --- !u!1 &2520982525007766416
 GameObject:
@@ -115,7 +115,7 @@ GameObject:
   - component: {fileID: 2520982525007766444}
   - component: {fileID: 2520982525007766419}
   - component: {fileID: 2520982525007766418}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TowerSight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -225,7 +225,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8155021191573773048}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,7 +259,7 @@ GameObject:
   - component: {fileID: 2223361974818194700}
   - component: {fileID: 6851811463061023213}
   - component: {fileID: 7646909837616312721}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

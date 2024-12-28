@@ -31,5 +31,10 @@ namespace UI
             UIManager.Instance.CloseAll();
             UIManager.Instance.OpenUI<CanvasHome>();
         }
+
+        public void OpenLibrary()
+        {
+            UIManager.Instance.OpenUI<CanvasLibrary>();
+        }
     }
 }

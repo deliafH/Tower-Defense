@@ -8,7 +8,7 @@ public class ChangeDestinationScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(nextDest.Length > 0)
+        if(collision.CompareTag("Enemy") && nextDest.Length > 0)
             collision.GetComponent<BotMoving>().SetDest(nextDest[Random.Range(0, nextDest.Length)].position);
     }
 }
